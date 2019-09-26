@@ -1,0 +1,16 @@
+{% extends 'background_colour.html' %}
+
+{% block content %}
+
+<h1>Hi {{name}} !!!...</h1>
+<h2>Fibinocci_Series Assignment : </h2>
+<form action="fibonacci" method="post">
+
+    {% csrf_token %}
+
+    Enter The Number : <input type="text" name="num"><br>
+    <input type="submit">
+
+</form>
+
+{% endblock %}
